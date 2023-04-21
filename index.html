@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <style>
+        body{
+            background-color: rgb(219, 219, 219);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding: 100px;
+        }
+        .card{
+            width: 200px;
+            padding: 15px;
+            background-color: white;
+        }
+        .img-wrap{
+            height: 180px;
+            overflow: hidden;
+            position: relative;
+        }
+        .img-wrap img{
+            width: 100%;
+            transition: 0.5s;
+        }
+        .img-wrap div{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            bottom: -100%;
+            transition: 0.5s;
+        }
+        .img-wrap .flex{
+            display: flex;
+            color: white;
+            font-size: 20px;
+            justify-content: center;
+            gap: 20px;
+            height: 100%;
+            align-items: center;
+        }
+        .img-wrap .flex i{
+            background-color: rgb(162, 0, 255);
+            padding: 5px 7px 5px 7px;
+            border-radius: 100%;
+            transition: 0.3s;
+        }
+        .img-wrap .flex i:hover{
+            transform: scale(130%);
+        }
+        .img-wrap:hover img{
+            transform: scale(200%);
+            filter: grayscale(100%);
+        }
+        .img-wrap:hover div{
+            bottom: 0;
+            z-index: 2;
+        }
+        .card b{
+            display: block;
+            margin-top: 5px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="img-wrap">
+            <div>
+                <div class="flex">
+                    <i class="bi bi-link-45deg"></i>
+                    <i class="bi bi-eye"></i>
+                    <i class="bi bi-share"></i>
+                </div>
+            </div>
+            <img src="flower.jpg">
+        </div>
+        <b>Lorem, ipsum dolor.</b>
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing...</span>
+    </div>
+</body>
+</html>
